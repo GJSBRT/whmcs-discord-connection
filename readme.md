@@ -3,6 +3,8 @@ This will let paying customers get a Discord role by going to /discord.php.
 
 I will not be providing support for this repository.
 
+If you like it then give it a star! 🌟
+
 ## Installation
 1. Add the `discord.php` file to the root of your WHMCS installation
 
