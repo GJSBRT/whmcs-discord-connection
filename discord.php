@@ -68,9 +68,7 @@ if ($client) {
             $results = localAPI($command, $postData);
 
             /* Add role to user */
-            $currentUser = new CurrentUser();
             $authUser = $currentUser->user();
-
             $command = 'GetClientsDetails';
             $postData = array(
                 'clientid' => $authUser->id,
@@ -104,6 +102,8 @@ if ($client) {
     } else {
         header('Location: https://discordapp.com/oauth2/authorize?response_type=code&client_id=' . $client_id . '&redirect_uri=' . $domainurl . '/discord.php&scope=' . $scopes );
     }
+} else {
+    header("Location: {$domainurl}/login");
 }
 
 $ca->setTemplate('discord');
