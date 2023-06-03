@@ -1,4 +1,8 @@
 # WHMCS Discord Connection
+
+## Maybe works
+I don't have access to WHMCS anymore, here are some changes that may work
+
 This will let paying customers get a Discord role by going to /discord.php.
 I will not be providing support for this repository.
 
